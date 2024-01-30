@@ -15,17 +15,19 @@
         <div class="Nuevo-usuario">
             <h3 class="title">Crear cuenta</h3>
             <form class="formulario" method="post" action="" onsubmit="return validacion()">
-                <div class="Usuario">
+                <div class="Usuario formulario-grupo-incorrecto" id="grupo_usuario">
                     <label for="Usuario">Usuario</label>
                     <div class="text-input">
                         <input type="text" id="Usuario">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         <span id="usu_error" class="usu-error"></span>
                     </div>
                 </div>
-                <div class="Nombre">
+                <div class="Nombre" id="grupo_nombre">
                     <label for="Nombre">Nombre</label>
                     <div class="text-input">
                         <input type="text" id="Nombre">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         <span id="nom_error" class="nom-error"></span>
                     </div>
                 </div>
@@ -33,13 +35,15 @@
                     <label for="contraseña">Contraseña</label>
                     <div class="text-input">
                         <input type="text" id="contraseña">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         <span id="contra_error" class="contra-err"></span>
                     </div>
                 </div>
                 <div class="rep-contraseña">
-                    <label for="contraseña">Repetir contraseña</label>
+                    <label for="rep-contraseña">Repetir contraseña</label>
                     <div class="text-input">
                         <input type="text" id="rep-contraseña">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         <span id="rep-contraseña_error" class="rep-contraseña_error"></span>
 
                     </div>
@@ -48,6 +52,7 @@
                     <label for="Correo">Correo</label>
                     <div class="text-input">
                         <input type="text" id="correo" placeholder="########@gmail.com">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         <span id="Correo_error" class="Correo_error"></span>
                     </div>
                 </div>
@@ -56,16 +61,24 @@
                     <label for="Telefono">Teléfono</label>
                     <div class="text-input">
                         <input type="text" id=telefono" placeholder="#########">
-                        <span id="telefono_error" class="telefono_error"></span>
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                        <span id="telef_error" class="telefono_error"></span>
                     </div>
                 </div>
+                <div class="terminos">
+                    <label><input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">Acepto los
+                        Terminos y Condiciones</label>
+                </div>
+                <div class="boton">
                 <button class="login-btn">Crear cuenta</button>
-               
+                </div>
+
             </form>
         </div>
 
     </div>
-    <script src="validacion.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="https:kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

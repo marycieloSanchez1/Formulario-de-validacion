@@ -171,7 +171,7 @@ a.forgot {
 /*utiliza el contenedor de cuenta.html*/
 .contenedor {
     width: 50vw;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,4 +213,53 @@ a.forgot {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:20px
+}
+
+.formulario_validacion-estado{
+    opacity: 0; /*ayuda a que los iconos de validacion se oculte*/
+}
+
+.formulario-grupo-correcto
+.formulario_validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario-grupo-incorrecto 
+.formulario_validacion-estado{
+color: #bb2929;
+opacity: 1;
+}
+
+
+.formulario_checkbox{
+    margin-right: 10px;
+}
+
+.terminos, .boton{
+    grid-column: span 2; /*con el grid-colum abarca en dos columnas el bloque */
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px){
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+
+    .terminos, .boton{
+        grid-column: 1;
+    }
+
+    .boton{
+        width: 100%;
+    }
+    .contenedor{
+        height: auto;
+        margin: 30px;
+    }
 }
