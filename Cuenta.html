@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="Nuevo-usuario">
+            <h3 class="title">Crear cuenta</h3>
+            <form class="formulario" method="post" action="" onsubmit="return validacion()">
+                <div class="Usuario">
+                    <label for="Usuario">Usuario</label>
+                    <div class="text-input">
+                        <input type="text" id="Usuario">
+                        <span id="usu_error" class="usu-error"></span>
+                    </div>
+                </div>
+                <div class="Nombre">
+                    <label for="Nombre">Nombre</label>
+                    <div class="text-input">
+                        <input type="text" id="Nombre">
+                        <span id="nom_error" class="nom-error"></span>
+                    </div>
+                </div>
+                <div clas="contraseña">
+                    <label for="contraseña">Contraseña</label>
+                    <div class="text-input">
+                        <input type="text" id="contraseña">
+                        <span id="contra_error" class="contra-err"></span>
+                    </div>
+                </div>
+                <div class="rep-contraseña">
+                    <label for="contraseña">Repetir contraseña</label>
+                    <div class="text-input">
+                        <input type="text" id="rep-contraseña">
+                        <span id="rep-contraseña_error" class="rep-contraseña_error"></span>
+
+                    </div>
+                </div>
+                <div class="Correo">
+                    <label for="Correo">Correo</label>
+                    <div class="text-input">
+                        <input type="text" id="correo" placeholder="########@gmail.com">
+                        <span id="Correo_error" class="Correo_error"></span>
+                    </div>
+                </div>
+
+                <div class="Telefono">
+                    <label for="Telefono">Teléfono</label>
+                    <div class="text-input">
+                        <input type="text" id=telefono" placeholder="#########">
+                        <span id="telefono_error" class="telefono_error"></span>
+                    </div>
+                </div>
+                <button class="login-btn">Crear cuenta</button>
+               
+            </form>
+        </div>
+
+    </div>
+    <script src="validacion.js"></script>
+</body>
+
+</html>
